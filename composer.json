@@ -1,0 +1,41 @@
+{
+    "name": "jbroutier/image-generator",
+    "description": "Offline random placeholder image generator.",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jérémie BROUTIER",
+            "email": "jeremie.broutier@posteo.net",
+            "homepage": "https://github.com/jbroutier",
+            "role": "developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/jbroutier/image-gneerator/issues"
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "phpstan/extension-installer": "^1.3",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
+        "phpstan/phpstan-strict-rules": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ImageGenerator\\": "src"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse --memory-limit 1G"
+    }
+}

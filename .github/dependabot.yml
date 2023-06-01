@@ -1,0 +1,12 @@
+version: 2
+updates:
+    -   package-ecosystem: composer
+        directory: /
+        target-branch: main
+        open-pull-requests-limit: 20
+        labels:
+            - 'dependencies'
+            - 'php'
+        schedule:
+            interval: daily
+
